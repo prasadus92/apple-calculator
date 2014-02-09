@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apple Calculator</title>
+
+        <link href = "apple-calculator.css" rel = "stylesheet" />
+        <script type="text/javascript" src="apple.js"></script>
+
+    </head>
+    <body>
+        <div id = "calc">
+            <div class = "row" id = "row0">
+                <input class = "input" type = "text"  value="" size = 30 id = "input_box">
+                <div id= "calculation"></div>
+                <!--<div id="result">4,856,995.2</div>-->
+            </div>
+
+            <div class = "row" id = "row1">
+                <button id="mc" onclick=memoryclear()>MC</button>
+                <button id="mplus" onclick=memoryadd()>M+</button>
+                <button id="mminus" onclick=memorysub()> M- </button>
+                <button id="mr" onclick=memoryrecall()> MR </button>
+            </div>
+
+            <div class = "row" id = "row2">
+                <button class = "clear_button" id="cbutton" onclick = "reset();">C</button>
+                <button id="plusminus" onclick ="negation();">&plusmn;</button>
+                <button class = "operator_button" id="divide" onclick = 'operator(" / ");'>&divide;</button>
+                <button class = "operator_button" id="times" onclick = 'operator(" * ");'>&times;</button>
+            </div>
+
+            <div class = "row" id = "row3">
+                <button class = "num_button" id="seven" onclick = 'displaynum("7");'> 7 </button>
+                <button class = "num_button" id="eight" onclick = 'displaynum("8");'> 8 </button>
+                <button class = "num_button" id="nine" onclick = 'displaynum("9");'> 9 </button>
+                <button class = "operator_button" id="minus" onclick = 'operator(" - ");'>-</button>
+            </div>
+
+            <div class = "row" id = "row4">
+                <button class = "num_button" id="four" onclick = 'displaynum("4");'> 4 </button>
+                <button class = "num_button" id="five" onclick = 'displaynum("5");'> 5 </button>
+                <button class = "num_button" id="six" onclick = 'displaynum("6");'> 6 </button>
+                <button class = "operator_button" id="plus" onclick = 'operator(" + ");'>+</button>
+            </div>
+
+            <div class = "row" id = "row5">
+                <button class = "num_button" id="one" onclick = 'displaynum("1");'> 1 </button>
+                <button class = "num_button" id="two" onclick = 'displaynum("2");'> 2 </button>
+                <button class = "num_button" id="three" onclick = 'displaynum("3");'> 3 </button>
+                <button class = "equal_button" style="width: 84px;" id = "equals" onclick = "calculate();">=</button>
+            </div>
+
+            <div class = "row" id = "row5">
+                <button class = "num_button" id = "zero" onclick = 'displaynum("0");'>0</button>
+                <button class = "num_button" onclick = 'displaynum(".");'>.</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>
