@@ -1,8 +1,11 @@
 Apple Calculator
 ===============
 
-A simple Apple Calculator using the power of CSS for the visualization and JavaScript for computation.
+A simple Apple Calculator using HTML, CSS and JavaScript.
 
-By:
+<a href="https://linkedin.com/in/prasadus">Prasad U S</a>
 
-Prasad U S
+
+Known Issues:
+
+1. No support for arithmetic expressions with ().
